@@ -1,0 +1,127 @@
+/* Start Global Values */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+p {
+    font-size: 18px;
+}
+/* End Global Values */
+/* Start Varuales */
+:root {
+    --bgcard-color: hsl(216, 50%, 16%);
+    --bgmain-color: hsl(217, 54%, 11%);
+    --line-color: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0, 100%);
+    --syan-color: hsl(178, 100%, 50%);
+    --soft-color: hsl(215, 51%, 70%);
+    --shadow-color: hsl(216,55%,11%);
+}
+/* End Varuales */
+/* Start Card */
+.parent {
+    width: 310px;
+    height: 535px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    background-color: var(--bgcard-color);
+    box-shadow: 20px 20px 20px var(--shadow-color) ;
+}
+/* Top Card Image */
+a {
+    overflow: hidden;
+}
+img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.div {
+    width: 270px;
+    height: 268px;
+    margin: 21px 20px;
+    border-radius: 10px;
+    background-color: var(--syan-color);
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:active .div {
+    z-index: 1;
+    opacity: .5;
+    background-image: url(images/icon-view.svg);
+    background-size: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Bottom Card */
+.Bottom {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/* Heading of Card */
+.Bottom h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* Small Pargrah */
+.pargrah {
+    opacity: .4;
+    color: var(--syan-color);
+    margin-bottom: 20px;
+}
+/* Eth Coins */
+.Eth {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: var(--line-color) 1px solid;
+}
+.Eth div {
+    color:  var(--syan-color);
+}
+.Eth img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    padding: 0;
+}
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer span:first-child {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    outline: 1px solid var(--white-color);
+    margin-right: 20px;
+}
+.footer img {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+    outline: 1px solid var(--white-color) !important;
+}
+.footer span:last-child {
+    opacity: .3;
+    color: var(--syan-color);
+}
+/* End Card */
